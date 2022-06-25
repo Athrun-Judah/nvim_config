@@ -34,9 +34,9 @@ packer.startup({
     -- project
     use("ahmedkhalf/project.nvim")
     -- treesitter
-    use({ 
-      "nvim-treesitter/nvim-treesitter", 
-      run = ":TSUpdate" ,
+    use({
+      "nvim-treesitter/nvim-treesitter",
+      run = ":TSUpdate",
       requires = {
         { "p00f/nvim-ts-rainbow" },
         { "JoosepAlviste/nvim-ts-context-commentstring" },
@@ -81,6 +81,9 @@ packer.startup({
     use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
     --括号补全
     use("windwp/nvim-autopairs")
+
+    -- git
+    use({ "lewis6991/gitsigns.nvim" })
   end,
   config = {
     -- 并发数限制
