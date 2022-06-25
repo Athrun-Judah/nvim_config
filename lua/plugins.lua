@@ -46,7 +46,8 @@ packer.startup({
       },
     })
     --------------------- LSP --------------------
-    use({ "williamboman/nvim-lsp-installer", commit = "36b44679f7cc73968dbb3b09246798a19f7c14e0" })
+    use("williamboman/nvim-lsp-installer")
+    --use({ "williamboman/nvim-lsp-installer", commit = "36b44679f7cc73968dbb3b09246798a19f7c14e0" })
     -- Lspconfig
     use({ "neovim/nvim-lspconfig" })
 
@@ -79,6 +80,10 @@ packer.startup({
 
     --TypeScript增强
     use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
+    
+    --Comment
+    use("numToStr/Comment.nvim")
+
     --括号补全
     use("windwp/nvim-autopairs")
 
