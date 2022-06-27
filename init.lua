@@ -44,4 +44,4 @@ require("lsp.null-ls")
 require("plugin-config.nvim-autopairs")
 
 -- 快速注释代码
-require("plugin-config.comment")
+require("Comment").setup()

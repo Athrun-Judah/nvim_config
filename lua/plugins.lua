@@ -82,8 +82,12 @@ packer.startup({
     use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
     
     --Comment
-    use("numToStr/Comment.nvim")
-
+    use{"numToStr/Comment.nvim",
+      config = function ()
+        require('Comment').setup()
+      end
+    }
+  
     --括号补全
     use("windwp/nvim-autopairs")
 
