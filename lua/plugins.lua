@@ -93,6 +93,8 @@ packer.startup({
 
     -- git
     use({ "lewis6991/gitsigns.nvim" })
+    -- sniprun
+    use { 'michaelb/sniprun', run = 'bash ./install.sh'}
   end,
   config = {
     -- 并发数限制

@@ -311,4 +311,9 @@ pluginKeys.gitsigns_on_attach = function(bufnr)
   map({ "o", "x" }, "ig", ":<C-U>Gitsigns select_hunk<CR>")
 end
 
+-- sniprun
+map('v', 'f', ':SnipRun', opt)
+map('n', '<leader>fj', ':SnipRunOperator', opt)
+map('n', '<leader>ff', ':SnipRun', opt)
+
 return pluginKeys

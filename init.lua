@@ -45,3 +45,6 @@ require("plugin-config.nvim-autopairs")
 
 -- 快速注释代码
 require("Comment").setup()
+
+-- sniprun
+require("plugin-config.sniprun")
