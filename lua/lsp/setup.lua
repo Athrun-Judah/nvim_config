@@ -1,9 +1,42 @@
 -- local lsp_installer = require("nvim-lsp-installer")
-require("nvim-lsp-installer").setup({
-  -- 自动安装 Language Servers
-  automatic_installation = true,
+-- require("nvim-lsp-installer").setup({
+--   -- 自动安装 Language Servers
+--   automatic_installation = true,
+-- })
+
+-- :h mason-default-settings
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗",
+    },
+  },
 })
---local lsp_installer = require("nvim-lsp-installer")
+
+-- mason-lspconfig uses the `lspconfig` server names in the APIs it exposes - not `mason.nvim` package names
+-- https://github.com/williamboman/mason-lspconfig.nvim/blob/main/doc/server-mapping.md
+require("mason-lspconfig").setup({
+  -- 确保安装，根据需要填写
+  ensure_installed = {
+    "sumneko_lua",
+    "tsserver",
+    "tailwindcss",
+    --"bashls",
+    "cssls",
+    "dockerls",
+    "emmet_ls",
+    "html",
+    "jsonls",
+    "pyright",
+    "rust_analyzer",
+    --"taplo",
+    "yamlls",
+    --"gopls",
+  },
+})
+
 local lspconfig = require('lspconfig')
 
 -- 安装列表
@@ -18,7 +51,12 @@ local servers = {
   remark_ls = require("lsp.config.markdown"),
   sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
   tsserver = require("lsp.config.ts"),
-  zk = require("lsp.config.markdown"),
+  --[[ zk = require("lsp.config.markdown"), ]]
+  tailwindcss = require("lsp.config.tailwindcss"),
+  rust_analyzer = require("lsp.config.rust"),
+  yamlls = require("lsp.config.yamlls"),
+  pyright = require("lsp.config.pyright"),
+  dockerls = require("lsp.config.docker"),
 }
 
 for name, config in pairs(servers) do

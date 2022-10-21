@@ -5,8 +5,8 @@ if not status then
 end
 
 sniprun.setup({
-  selected_interpreters = {},     --# use those instead of the default for the current filetype
-  repl_enable = {},               --# enable REPL-like behavior for the given interpreters
+  selected_interpreters = {"JS_TS_deno"},     --# use those instead of the default for the current filetype
+  repl_enable = {"JS_TS_deno"},               --# enable REPL-like behavior for the given interpreters
   repl_disable = {},              --# disable REPL-like behavior for the given interpreters
 
   interpreter_options = {         --# interpreter-specific options, see docs / :SnipInfo <name>

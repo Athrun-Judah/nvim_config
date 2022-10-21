@@ -46,8 +46,13 @@ packer.startup({
       },
     })
     --------------------- LSP --------------------
-    use("williamboman/nvim-lsp-installer")
-    --use({ "williamboman/nvim-lsp-installer", commit = "36b44679f7cc73968dbb3b09246798a19f7c14e0" })
+    -- use("williamboman/nvim-lsp-installer") //作者不再维护，放弃使用
+    -- use({ "williamboman/nvim-lsp-installer", commit = "36b44679f7cc73968dbb3b09246798a19f7c14e0" })
+    
+    --------------------- Mason.nvim --------------------
+    use({ "williamboman/mason.nvim" })
+    use({ "williamboman/mason-lspconfig.nvim" })
+
     -- Lspconfig
     use({ "neovim/nvim-lspconfig" })
 
