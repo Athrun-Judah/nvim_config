@@ -8,7 +8,8 @@ nvim（0.7.0以上)
 
 需要`node`环境  
 
-packer.nvim下载地址`git clone --depth 1 https://github.com/wbthomason/packer.nvim\~/.local/share/nvim/site/pack/packer/start/packer.nvim`  
+packer.nvim下载地址`git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`  
 
 treesitter需要安装`cc`,`gcc`,`clang`,`zig`等  (应该安装其一就可以)
 
