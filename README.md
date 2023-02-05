@@ -18,13 +18,9 @@ sumneko_lua需要安装`unzip`
 telescope.nvim快速搜索依赖 `ripgrep` 和 `fd`  
 
 安装ripgrep：  
-~~
-sudo add-apt-repository ppa:x4121/ripgrep
-~~
+~~`sudo add-apt-repository ppa:x4121/ripgrep`~~
 
-~~
-sudo apt-get update
-~~
+~~`sudo apt-get update`~~
 
 `
 sudo apt install ripgrep
