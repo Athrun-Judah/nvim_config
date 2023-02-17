@@ -20,12 +20,13 @@ require("mason").setup({
 require("mason-lspconfig").setup({
   -- 确保安装，根据需要填写
   ensure_installed = {
-    "sumneko_lua",
+    --"sumneko_lua",
+    "lua_ls",
     "tsserver",
-    "tailwindcss",
-    --"bashls",
+    --"tailwindcss",
+    "bashls",
     "cssls",
-    "dockerls",
+    --"dockerls",
     "emmet_ls",
     "html",
     "jsonls",
@@ -49,14 +50,15 @@ local servers = {
   html = require("lsp.config.html"),
   jsonls = require("lsp.config.json"),
   remark_ls = require("lsp.config.markdown"),
-  sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
+  --sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
+  lua_ls = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
   tsserver = require("lsp.config.ts"),
   --[[ zk = require("lsp.config.markdown"), ]]
-  tailwindcss = require("lsp.config.tailwindcss"),
+  --tailwindcss = require("lsp.config.tailwindcss"),
   rust_analyzer = require("lsp.config.rust"),
   yamlls = require("lsp.config.yamlls"),
   pyright = require("lsp.config.pyright"),
-  dockerls = require("lsp.config.docker"),
+  --dockerls = require("lsp.config.docker"),
 }
 
 for name, config in pairs(servers) do

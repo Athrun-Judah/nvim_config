@@ -13,7 +13,7 @@ packer.nvim下载地址`git clone --depth 1 https://github.com/wbthomason/packer
 
 treesitter需要安装`cc`,`gcc`,`clang`,`zig`等  (应该安装其一就可以)
 
-sumneko_lua需要安装`unzip`  
+~~sumneko_lua需要安装`unzip`~~ use lua_ls instead
 
 telescope.nvim快速搜索依赖 `ripgrep` 和 `fd`  
 

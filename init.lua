@@ -48,3 +48,6 @@ require("Comment").setup()
 
 -- sniprun
 require("plugin-config.sniprun")
+
+-- nvim-dap
+require("dap.nvim-dap")

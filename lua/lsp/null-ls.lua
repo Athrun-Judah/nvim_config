@@ -17,6 +17,8 @@ null_ls.setup({
     formatting.shfmt,
     -- StyLua
     formatting.stylua,
+    -- rustfmt
+    formatting.rustfmt,
     -- frontend
     formatting.prettier.with({ -- 比默认少了 markdown
       filetypes = {

@@ -6,16 +6,25 @@ packer.startup({
     -- 你的插件列表...
     --------------------- colorschemes --------------------
     -- tokyonight
-    --use("folke/tokyonight.nvim")
+    use("folke/tokyonight.nvim")
 
     -- onedark
     use("ful1e5/onedark.nvim")
 
     -- nightfox
-    --use("EdenEast/nightfox.nvim")
+    use("EdenEast/nightfox.nvim")
 
     -- mhartington /oceanic-next
     use("mhartington/oceanic-next")
+
+    -- glepnir/zephyr-nvim
+    use({
+        'glepnir/zephyr-nvim',
+        requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
+    })
+
+    -- catppuccin/nvim
+    use("catppuccin/nvim")
 
     -------------------------- plugins -------------------------------------------
     -- nvim-tree
@@ -100,6 +109,17 @@ packer.startup({
     use({ "lewis6991/gitsigns.nvim" })
     -- sniprun
     use { 'michaelb/sniprun', run = 'bash ./install.sh'}
+    
+    -- rust增强
+    use("simrat39/rust-tools.nvim")
+
+    -- vimspector
+    use("puremourning/vimspector")
+
+    -- nvim-dap 
+    use("mfussenegger/nvim-dap")
+    use("theHamsta/nvim-dap-virtual-text")
+    use("rcarriga/nvim-dap-ui")
   end,
   config = {
     -- 并发数限制

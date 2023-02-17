@@ -4,12 +4,12 @@ if not status then
   return
 end
 
-db.custom_footer = {
+local custom_footer = {
   "",
   "",
 }
 
-db.custom_center = {
+local custom_center = {
   {
     icon = "  ",
     desc = "Projects                            ",
@@ -35,34 +35,34 @@ db.custom_center = {
     desc = "Edit Projects                       ",
     action = "edit ~/.local/share/nvim/project_nvim/project_history",
   },
-  -- {
-  --   icon = "  ",
-  --   desc = "Edit .zshrc                        ",
-  --   action = "edit ~/.zshrc",
-  -- },
-  -- {
-  --   icon = "  ",
-  --   desc = "Change colorscheme                  ",
-  --   action = "ChangeColorScheme",
-  -- },
-  -- {
-  --   icon = "  ",
-  --   desc = "Edit init.lua                       ",
-  --   action = "edit ~/.config/nvim/init.lua",
-  -- },
-  -- {
-  --   icon = "  ",
-  --   desc = "Find file                           ",
-  --   action = "Telescope find_files",
-  -- },
-  -- {
-  --   icon = "  ",
-  --   desc = "Find text                           ",
-  --   action = "Telescopecope live_grep",
-  -- },
+  {
+    icon = "  ",
+    desc = "Edit .zshrc                        ",
+    action = "edit ~/.zshrc",
+  },
+  {
+    icon = "  ",
+    desc = "Change colorscheme                  ",
+    action = "ChangeColorScheme",
+  },
+  {
+    icon = "  ",
+    desc = "Edit init.lua                       ",
+    action = "edit ~/.config/nvim/init.lua",
+  },
+  {
+    icon = "  ",
+    desc = "Find file                           ",
+    action = "Telescope find_files",
+  },
+  {
+    icon = "  ",
+    desc = "Find text                           ",
+    action = "Telescopecope live_grep",
+  },
 }
 
-db.custom_header = {
+local custom_header = {
     [[' ⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂ ']],
     [[' ⣿⣿⣿⡷⠊⡢⡹⣦⡑⢂⢕⢂⢕⢂⢕⢂⠕⠔⠌⠝⠛⠶⠶⢶⣦⣄⢂⢕⢂⢕ ']],
     [[' ⣿⣿⠏⣠⣾⣦⡐⢌⢿⣷⣦⣅⡑⠕⠡⠐⢿⠿⣛⠟⠛⠛⠛⠛⠡⢷⡈⢂⢕⢂ ']],
@@ -79,3 +79,12 @@ db.custom_header = {
     [[' ⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈ ']],
     [['']],
 }
+
+db.setup({
+  theme = 'doom',
+  config= {
+    header = custom_header,
+    center = custom_center,
+    footer = custom_footer,
+  }
+})
