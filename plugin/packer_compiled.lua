@@ -200,6 +200,11 @@ _G.packer_plugins = {
     path = "/home/athrun/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
+  ["nvim-dap-vscode-js"] = {
+    loaded = true,
+    path = "/home/athrun/.local/share/nvim/site/pack/packer/start/nvim-dap-vscode-js",
+    url = "https://github.com/mxsdev/nvim-dap-vscode-js"
+  },
   ["nvim-lsp-ts-utils"] = {
     loaded = true,
     path = "/home/athrun/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils",
@@ -319,6 +324,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/athrun/.local/share/nvim/site/pack/packer/start/vimspector",
     url = "https://github.com/puremourning/vimspector"
+  },
+  ["vscode-js-debug"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/athrun/.local/share/nvim/site/pack/packer/opt/vscode-js-debug",
+    url = "https://github.com/microsoft/vscode-js-debug"
   },
   ["zephyr-nvim"] = {
     loaded = true,
